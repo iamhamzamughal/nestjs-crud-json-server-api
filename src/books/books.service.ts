@@ -13,7 +13,7 @@ export class BooksService {
    return res.data;
   }
 
-  async findAll():Promise<Book> {
+  async findAll():Promise<Book[]> {
    const res= await axios.get(BASE_URL)
    return res.data;
   }
